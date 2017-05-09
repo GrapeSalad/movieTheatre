@@ -22,5 +22,14 @@ $(document).ready(function() {
     var newMovie = new Movie(mgmtMovieNameInput, mgmtMovieRatingInput, mgmtMovieSynopsisInput);
 
     console.log(newMovie);
+// Adds new tab
+    $("#addMovieToPage").last().click(function() {
+      $("ul.nav-tabs").append('<li class=""><a data-toggle="tab" href="#' +
+                          newMovie.movieName +
+                          '">' +
+                          newMovie.movieName +
+                          '</a></li>'
+      );
+    });
   });
 });
