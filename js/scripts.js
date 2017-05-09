@@ -29,13 +29,10 @@ $(document).ready(function() {
     var newMovie = new Movie(mgmtMovieNameInput, mgmtMovieRatingInput, mgmtMovieSynopsisInput);
     newTheatre = new Theatre(mgmtMovieNameInput);
     newTheatre.theatreMovies.push(newMovie);
-    console.log(newMovie);
-    console.log(newTheatre.theatreMovies[0].movieSynopsis);
   });
 
 // Adds new tab
   $("#addMovieToPage").last().click(function() {
-    console.log(newTheatre.theatreMovies);
     $("ul#navTabs").append('<li class=""><a data-toggle="tab" href="#' +
                         newTheatre.theatreMovies[0].movieName +
                         '">' +
@@ -49,6 +46,18 @@ $(document).ready(function() {
                                 '" class="tab-pane fade">' +
                                 '<p>'+ newTheatre.theatreMovies[0].movieRating +'</p>' +
                                 '<p>'+ newTheatre.theatreMovies[0].movieSynopsis +'</p>' +
+                                '<form class="userForm">' +
+                                  '<label for="ticketType">Select a ticket type</label>'+
+                                  '<select class="form-control" id="ticketType">'+
+                                    '<option>Standard</option>'+
+                                    '<option>Matine</option>'+
+                                    '<option>Seinor</option>'+
+                                  '</select>'+
+                                  '<label for="ticketNumber">Quantity:</label>'+
+                                  '<input type="number" id="ticketNumber">'+
+                                  '<label for="userName">Name:</label>'+
+                                  '<input type="text" id="userName" value="">'+
+                                '</form>'+
                                 '</div>'
     );
   });
