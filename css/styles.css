@@ -1,12 +1,20 @@
-/*.hidden-content {
-  display: none;
-}*/
-
 .clickable {
   color: blue;
   cursor: pointer;
 }
 
+.hidden-content {
+  /*display: none;*/
+  position: fixed;
+  bottom: 150px;
+  left: 0;
+  right: 0;
+  height: 50px;
+}
+.hidden-content button {
+  display: block;
+  margin: 10px auto;
+}
 
 /********** FOOTER  ************/
 footer {
