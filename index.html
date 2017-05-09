@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Theatre 1</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Movie Nook</h1>
+      <div class="row">
+        <div class="col-md-6">
+           <!-- TABS -->
+          <ul class="nav nav-tabs" data-tabs="tabs">
+            <li class="active"><a data-toggle="tab" href="#rogueOne">Rogue One</a></li>
+            <li class=""><a data-toggle="tab" href="#rogueOne">Rogue Two</a></li>
+            <li class=""><a data-toggle="tab" href="#rogueOne">Rogue Three</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="rogueOne" class="tab-pane fade in active">
+              <p>KJT:LSKJT:SLEKHT:ESALHTS:ELTHSE:LTHES:ATHS:KTHSA:LTHS:ETH:</p>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+        <div class="col-md-6">
+
+        </div>
+      </div>
+        <div class="hidden-content">
+          <form id="mgmtForm" class="form-control">
+            <label for="movieName">Movie Name</label>
+            <input class="movieName" type="text" name="movieName" value="Movie Name"></input>
+
+            <label for="movieRating">Rating</label>
+            <input class="movieRating" type="text" name="movieRating" value="Rating"></input>
+
+            <label for="movieSynopsis">Synopsis</label>
+            <input class="movieSynopsis" type="text" name="movieSynopsis" value="Synopsis"></input>
+
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+
+        <footer>
+        <p>To add a new movie click this link: <span class="clickable" id="mgmtPortal">Add Tab</span></p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+/*.hidden-content {
+  display: none;
+}*/
+
+.clickable {
+  color: blue;
+  cursor: pointer;
+}
+
+
+/********** FOOTER  ************/
+footer {
+	margin: 0 auto -10px;
+  padding: 10px 0 0;
+  height: auto;
+  width: 600px;
+	font-weight: bold;
+	text-align: center;
+	background-color: rgba(56, 56, 56, 0.5);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  border-width: 1px 1px 0;
+  border-style: solid;
+  border-color: #FDFBFF;
+  border-radius: 4px 4px 0 0;
+  z-index: 5;
+}
